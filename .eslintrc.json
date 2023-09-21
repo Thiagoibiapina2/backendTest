@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "eslint-config-prettier",
+    "@rocketseat/eslint-config/node"
+  ],
+  "rules": {
+    "camelcase": "off"
+  }
+}

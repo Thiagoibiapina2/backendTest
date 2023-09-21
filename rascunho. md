@@ -1,0 +1,27 @@
+import { Request, Response } from 'express'
+import { prisma } from '../database/prisma'
+import bcrypt from 'bcrypt'
+
+export class UserController {
+  async create(req: Request, res: Response) {
+    const { id, name, email, password } = req.body
+    const UserExist = await prisma.user.findUnique({
+      where: {
+        id,
+      },
+    })
+    if (UserExist) {
+      return res.json({ error: 'User already exists' })
+    } else {
+      const User = await prisma.user.create({
+        data: {
+          name,
+          email,
+          password: await bcrypt.hash(password, 10),
+        },
+      })
+
+      return res.json(User)
+    }
+  }
+}
