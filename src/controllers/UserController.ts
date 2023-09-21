@@ -2,9 +2,11 @@ import { Request, Response } from 'express'
 
 import { prisma } from '../database/prisma'
 
-import bcrypt from 'bcrypt'
+// import bcrypt from 'bcrypt'
 
 import jwt, { Secret } from 'jsonwebtoken'
+
+import bcrypt from 'bcryptjs'
 
 const JWT_SECRET = process.env.SECRET
 
