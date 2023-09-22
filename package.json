@@ -10,7 +10,7 @@
     "start": "node server.ts",
     "lint": "eslint src --ext .ts --fix",
     "dev": "nodemon",
-    "build": "prisma generate && tsc"
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
