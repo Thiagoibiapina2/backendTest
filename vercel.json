@@ -8,8 +8,32 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "/api/auth",
+      "dest": "./server.ts"
+    },
+    {
+      "src": "/api/User",
+      "dest": "./server.ts"
+    },
+    {
+      "src": "/api/Post",
+      "dest": "./server.ts"
+    },
+    {
+      "src": "/api/Post/:id",
+      "dest": "./server.ts"
+    },
+    {
+      "src": "/api/Post/:id",
+      "dest": "./server.ts"
+    },
+    {
+      "src": "/api/Post",
+      "dest": "./server.ts"
+    },
+    {
+      "src": "/api/Post/:id",
+      "dest": "./server.ts"
     }
   ]
 }
