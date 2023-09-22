@@ -7,8 +7,9 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "nodemon server.ts",
-    "lint": "eslint src --ext .ts --fix"
+    "start": "node server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
