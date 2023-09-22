@@ -9,31 +9,31 @@
   "routes": [
     {
       "src": "/api/auth",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     },
     {
       "src": "/api/User",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     },
     {
       "src": "/api/Post",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     },
     {
       "src": "/api/Post/:id",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     },
     {
       "src": "/api/Post/:id",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     },
     {
       "src": "/api/Post",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     },
     {
       "src": "/api/Post/:id",
-      "dest": "./server.ts"
+      "dest": "./src/routes.ts"
     }
   ]
 }
