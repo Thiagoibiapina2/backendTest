@@ -8,31 +8,31 @@
   ],
   "routes": [
     {
-      "src": "/api/auth",
+      "src": "/src/auth",
       "dest": "./src/routes.ts"
     },
     {
-      "src": "/api/User",
+      "src": "/src/User",
       "dest": "./src/routes.ts"
     },
     {
-      "src": "/api/Post",
+      "src": "/src/Post",
       "dest": "./src/routes.ts"
     },
     {
-      "src": "/api/Post/:id",
+      "src": "/src/Post/:id",
       "dest": "./src/routes.ts"
     },
     {
-      "src": "/api/Post/:id",
+      "src": "/src/Post/:id",
       "dest": "./src/routes.ts"
     },
     {
-      "src": "/api/Post",
+      "src": "/src/Post",
       "dest": "./src/routes.ts"
     },
     {
-      "src": "/api/Post/:id",
+      "src": "/src/Post/:id",
       "dest": "./src/routes.ts"
     }
   ]
