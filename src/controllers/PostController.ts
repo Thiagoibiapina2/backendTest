@@ -1,7 +1,6 @@
 import { Request, Response } from 'express'
 import { prisma } from '../database/prisma'
 import jwt, { Secret } from 'jsonwebtoken'
-import { error } from 'winston'
 
 const JWT_SECRET = process.env.SECRET
 
@@ -64,10 +63,6 @@ export class PostController {
           authorId,
         },
       })
-
-      if (Posts.length === 0) {
-        return res.status(404).json({ error, msg: 'Nenhum post encontrado.' })
-      }
 
       return res.json(Posts)
     } catch (error) {
