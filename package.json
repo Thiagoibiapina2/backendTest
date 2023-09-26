@@ -7,16 +7,15 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node server.ts",
+    "start": "nodemon ./src/server.ts",
     "lint": "eslint src --ext .ts --fix",
-    "dev": "nodemon",
     "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^4.16.2",
+    "@prisma/client": "^5.3.1",
     "@types/morgan": "^1.9.4",
     "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",

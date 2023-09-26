@@ -18,6 +18,6 @@ app.use(express.json())
 
 app.use(router)
 
-app.listen(process.env.PORT || 3002, function () {
+app.listen(3002, function () {
   console.log('Servidor Online!')
 })
