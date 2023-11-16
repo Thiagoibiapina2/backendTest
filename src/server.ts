@@ -10,7 +10,10 @@ const port = process.env.PORT || 3002
 
 app.use(
   cors({
-    origin: 'https://frontend-test-orpin.vercel.app',
+    origin: [
+      'https://frontend-test-orpin.vercel.app',
+      'exp://192.168.100.11:8081',
+    ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }),
